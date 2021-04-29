@@ -22,8 +22,14 @@ target_link_libraries(main pthread dummy_lib)   # CHANGEME
 
 
 ###### ---- Tests ------ ######
-add_executable(test_01 test/test_01.cpp)       # CHANGEME
-target_link_libraries(test_01 gtest_main dummy_lib)
+add_executable(test_run test/test_01.cpp test/test_02.cpp)       # CHANGEME
+target_link_libraries(test_run gtest_main dummy_lib)
 
-gtest_discover_tests(test_01)
+gtest_discover_tests(test_run)
 ###### ----------------- ######
+
+
+# - Helper
+# file(GLOB_RECURSE sources CONFIGURE_DEPENDS "*.cpp")
+# add_executable(my_target ${sources})
+
