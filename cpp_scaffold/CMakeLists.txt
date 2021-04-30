@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.14)
-project(my_project)                             # CHANGEME
+project(dummy_project) 
 
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
@@ -13,16 +13,16 @@ enable_testing()
 ###### --------------------- ######
 
 # - Libs
-add_library(dummy_lib src/lib.cpp)              # CHANGEME
+add_library(dummy_lib src/dummy.cpp) 
 target_include_directories (dummy_lib PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include)
 
 # - Execs
-add_executable( main src/main.cpp )             # CHANGEME
-target_link_libraries(main pthread dummy_lib)   # CHANGEME
+add_executable( main src/main.cpp ) 
+target_link_libraries(main dummy_lib)
 
 
 ###### ---- Tests ------ ######
-add_executable(test_run test/test_01.cpp test/test_02.cpp)       # CHANGEME
+add_executable(test_run test/test_dummy.cpp)
 target_link_libraries(test_run gtest_main dummy_lib)
 
 gtest_discover_tests(test_run)

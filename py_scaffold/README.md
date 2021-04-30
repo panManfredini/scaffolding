@@ -3,6 +3,7 @@
 
 ## Installation
 Install this package in a new environment for developing and testing.
+If you use conda, please do `conda deactivate` first.
 
 ```bash
 # create environment
@@ -40,4 +41,5 @@ pip install .
 ```bash
 # create requirement file
 pip freeze > requirements.txt
+
 ```

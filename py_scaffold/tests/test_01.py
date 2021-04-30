@@ -1,5 +1,5 @@
 from unittest import TestCase
-from name_package.lib import sum_of_int
+from name_package.core import sum_of_int
 
 class TestSum(TestCase):
     

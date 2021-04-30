@@ -1,5 +1,5 @@
 #include <gtest/gtest.h>
-#include "lib.h"
+#include "dummy.h"
 
 // Fixture
 class numbersTest : public ::testing::Test
