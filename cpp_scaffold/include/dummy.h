@@ -1,5 +1,7 @@
+#ifndef dummy_H
+#define dummy_H
 
-class numbers
+class dummy 
 {
     public:
     
@@ -11,3 +13,5 @@ class numbers
      */
     int AddTwoNumbers(int, int);
 };
+
+#endif

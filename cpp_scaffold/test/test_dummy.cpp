@@ -2,19 +2,19 @@
 #include "dummy.h"
 
 // Fixture
-class numbersTest : public ::testing::Test
+class dummyTest : public ::testing::Test
 {
   protected:
-    numbers n0_;
+    dummy n0_;
 
 };
 
 
 
-TEST_F(numbersTest, initialize) {
+TEST_F(dummyTest, initialize) {
   ASSERT_NE(&n0_, nullptr) << "Not equal to null pointer";
 }
 
-TEST_F(numbersTest, AddNumbers) {
+TEST_F(dummyTest, AddNumbers) {
   ASSERT_EQ(n0_.AddTwoNumbers(1,2), 3);
 }

@@ -1,6 +1,6 @@
 #include "dummy.h"
 
-int numbers::AddTwoNumbers(int a, int b)
+int dummy::AddTwoNumbers(int a, int b)
 {
     return (a + b);
 }
