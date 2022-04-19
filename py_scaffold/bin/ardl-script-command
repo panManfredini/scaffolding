@@ -1,0 +1,10 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+# THIS IS AN EXAMPLE FROM THE INFLUX-SINK
+from ardl_influxdb_sink.create_app import create_influx_db_sink_app
+import sys
+
+if __name__ == '__main__':
+    application = create_influx_db_sink_app()
+    sys.exit( application.run() )
+
